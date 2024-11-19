@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./img/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Medicina Estética - Dra. Isabella Ferreira</title>
+</head>
+
+<body>
+  <header class="flex flex-col items-center bg-sandyBlush min-h-dvh px-6 md:px-16 xl:px-0">
+    <nav class="relative lg:flex items-center justify-center lg:justify-end max-w-1140 w-full lg:w-4/5">
+      <!-- Botão do Menu Mobile -->
+      <div class="flex lg:hidden items-center justify-end h-24 relative">
+        <button id="menu-button">
+          <img 
+            class="w-5 h-5"
+            src="./img/icons/hamburguer.svg" 
+            alt="Botão para Menu Mobile"
+          />
+        </button>
+      </div>
+  
+      <!-- Menu -->
+      <div 
+        id="menu"
+        class="flex flex-col items-center lg:items-end lg:justify-end fixed lg:relative top-0 left-[-100%] lg:left-auto w-full sm:w-full md:w-[70%] lg:w-4/5 lg:max-w-1140 h-dvh lg:h-24 transition-all duration-300  lg:bg-inherit z-40"
+      >
+        <div class="flex lg:hidden items-center justify-end h-[108px] w-full px-6 xl:px-0 relative z-50">
+          <button id="menu-button">
+            <img 
+              class="w-4 h-4"
+              src="./img/icons/close.svg" 
+              alt="Botão para fechar Menu Mobile"
+            />
+          </button>
+        </div>
+
+        <ul class="text-black h-dvh lg:h-24 flex flex-col justify-center">
+          <li class="flex flex-col lg:flex-row gap-8 text-center lg:text-start">
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#">Inicio</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#detalhes">Detalhes</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#depoimentos">Depoimentos</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#sobre">Sobre</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#servicos">Serviços</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#resultados">Resultados</a>
+            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="max-w-1140 w-full lg:w-4/5 flex flex-col lg:flex-row items-center gap-12 my-14">
+      <div class="lg:w-3/6 flex flex-col gap-7">
+        <img src="./img/icons/logotipo.svg" alt="Logotipo Dra. Isabella Ferreira" class="w-[198px] mb-7">
+        <h2 class="text-2xl md:text-[2.5rem] font-medium lg:max-w-[516px] leading-8 md:leading-[50px]">
+          Domine o Botox e Conquiste a Liberdade Financeira no <span class="text-deepRed">Setor de Estética</span>
+        </h2>
+        <p class="font-light text-xl max-w-[516px] leading-6">
+          Método comprovado para faturar na estética com técnicas simples e resultados profissionais.
+        </p>
+        <div class="flex gap-6">
+          <button
+            class="bg-deepRed max-w-[228px] w-full h-14 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
+          >
+            Entrar Agora
+          </button>
+          <a href="https://www.instagram.com/draisabellagferreira/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-14 hover:opacity-75 transition-all duration-300 filter drop-shadow-[0px_2px_20px_#89371C]">
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:w-3/6 relative mt-12 lg:mt-0">
+        <img 
+          src="./img/efeito-luz.png" 
+          class="absolute top-[-60px] w-full max-w-none z-[1]" alt=""
+        >
+        <img 
+          src="./img/Dra. Isabella - Header.png" 
+          alt="Imagem ilustrativa Dra. Isabella Ferreira"
+          class="max-w-[546px] w-full relative z-[5]"
+        >
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>
