@@ -14,7 +14,7 @@ export default {
         sandyBlush: '#DAB3A9',
         deepRed: '#A24F34',
         brickRed: '#89371C',
-        softTerra: '#b46d57ed',
+        softTerra: '#c38877',
       },
       boxShadow: {
         brickRed: '0px 2px 20px 0px #89371C',
