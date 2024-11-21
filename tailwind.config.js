@@ -6,11 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-cherry-brown': 'linear-gradient(90deg, rgba(162,79,52,1) 0%, rgba(182,111,88,1) 100%)',
+      },
       colors: {
         black: '#000000',
         sandyBlush: '#DAB3A9',
         deepRed: '#A24F34',
         brickRed: '#89371C',
+        softTerra: '#b46d57ed',
       },
       boxShadow: {
         brickRed: '0px 2px 20px 0px #89371C',
