@@ -8,6 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         'gradient-cherry-brown': 'linear-gradient(90deg, rgba(162,79,52,1) 0%, rgba(182,111,88,1) 100%)',
+        'gradient-chocolate-caramel': 'linear-gradient(90deg, rgba(96,45,28,1) 0%, rgba(153,74,48,1) 100%)',
+        'gradient-white': 'linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0.14609593837535018) 70%)'
       },
       colors: {
         black: '#000000',
