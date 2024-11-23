@@ -1,4 +1,5 @@
 import './menuMobile.js';
 import './accordion.js';
 import './swiper.js';
-import './videoPlayer.js';
+import './player.js'
+import 'video.js/dist/video-js.css';
