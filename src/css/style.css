@@ -74,8 +74,8 @@ html {
   display: flex!important;
   justify-content: center;
   align-items: center;
-  width: 122px!important;
-  height: 122px!important;
+  width: 60px!important;
+  height: 60px!important;
 }
 
 .plyr__control--overlaid svg {
@@ -98,4 +98,11 @@ html {
 
 .plyr__controls {
   gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .plyr__control--overlaid {
+    width: 122px!important;
+    height: 122px!important;
+  }
 }

@@ -32,10 +32,10 @@ export default {
         sm: "100%",
         md: "768px",
         lg: "1024px",
-        xl: "1442px",
+        xl: "1200px",
+        xxl: "1442px",
       },
     },
-  },
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  }
 }
 
