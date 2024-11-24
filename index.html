@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
   <title>Medicina Estética - Dra. Isabella Ferreira</title>
 </head>
 
@@ -442,7 +443,7 @@
         <div class="bg-gray max-w-[276px] h-[461px] w-full relative rounded-md overflow-hidden">
           <!-- Vídeo -->
           <video class="videoPlayer w-full h-full object-cover opacity-25" preload="auto">
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
         
@@ -455,7 +456,7 @@
         <!-- Repita a estrutura para os outros players -->
         <div class="bg-gray max-w-[276px] h-[461px] w-full relative rounded-md overflow-hidden">
           <video class="videoPlayer w-full h-full object-cover opacity-25" preload="auto">
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
         
@@ -466,7 +467,7 @@
       
         <div class="bg-gray max-w-[276px] h-[461px] w-full relative rounded-md overflow-hidden">
           <video class="videoPlayer w-full h-full object-cover opacity-25" preload="auto">
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
         
@@ -477,7 +478,7 @@
 
         <div class="bg-gray max-w-[276px] h-[461px] w-full relative rounded-md overflow-hidden">
           <video class="videoPlayer w-full h-full object-cover opacity-25" preload="auto">
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
         
@@ -517,14 +518,24 @@
         Ainda está inseguro? <br>
         <span class="text-black">Assista a esta aula demonstrativa:</span>
       </h2>
-
-      <div id="player"></div>
-
-<!-- 
-      <video id="aulaVideo" class="video-js vjs-default-skin" controls preload="auto">
-        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-      </video> -->
+      
+      <div id="player-container">
+        <video 
+          poster="./img/capa-videoaula.jpg"
+          id="player" 
+          crossorigin 
+          playsinline 
+          hideControls
+        >
+          <source 
+            src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" 
+            type="video/mp4" 
+            size="576"
+          >
+          Seu navegador não suporta vídeos.
+        </video>
+      </div>
+      
     </section>
 
     <!-- FAQ -->
