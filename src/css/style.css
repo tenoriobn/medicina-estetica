@@ -6,6 +6,19 @@ html {
   @apply font-archivo;
 }
 
+/* Estilo para deixar Header fixo */
+header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(218, 179, 169, 0.432);
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
+  box-shadow: 0 4px 8px #0003;
+}
+
 .bg-card {
   background-size: cover;
 }
@@ -44,7 +57,6 @@ html {
 
 
 /* Estilos do play */
-
 .plyr__video-wrapper {
   background-color: inherit!important;
   background: inherit!important;
@@ -98,6 +110,25 @@ html {
 
 .plyr__controls {
   gap: 16px;
+}
+
+
+/* Estilo do ScrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff59;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A24F34;
+  border-radius: 0.375rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A24F34;
 }
 
 @media (min-width: 768px) {

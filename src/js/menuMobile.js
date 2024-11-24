@@ -1,6 +1,18 @@
 const menuButton = document.querySelectorAll('#menu-button');
 const menu = document.getElementById('menu');
 const menuLinks = menu.querySelectorAll('a');
+const header = document.querySelector('header');
+
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 1) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+
 
 menuButton.forEach(button => {
   button.addEventListener('click', () => {

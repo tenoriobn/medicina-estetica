@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#DAB3A9">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
   <link rel="icon" type="image/svg+xml" href="./img/vite.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +17,8 @@
   <title>Medicina Estética - Dra. Isabella Ferreira</title>
 </head>
 
-<body>
-  <header class="flex flex-col items-center bg-sandyBlush min-h-dvh px-6 md:px-16 xxl:px-0">
+<body class="bg-sandyBlush">
+  <header class="fixed w-full flex flex-col items-center px-6 md:px-16 xxl:px-0 z-50">
     <nav class="relative lg:flex items-center justify-center lg:justify-end max-w-1140 w-full">
       <!-- Botão do Menu Mobile -->
       <div class="flex lg:hidden items-center justify-end h-24 relative">
@@ -55,8 +59,11 @@
         </ul>
       </div>
     </nav>
+  </header>
 
-    <section class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row items-center gap-12 my-12 lg:my-14">
+  <main class="flex flex-col items-center px-6 md:px-16 xxl:px-0">
+    <!-- Chamada -->
+    <section class="max-w-xl lg:max-w-1140 w-full min-h-screen flex flex-col lg:flex-row items-center gap-12 pt-[152px] pb-[96px]">
       <div class="lg:w-3/6 flex flex-col items-center lg:items-start gap-4 lg:gap-7">
         <img src="./img/icons/logotipo.svg" alt="Logotipo Dra. Isabella Ferreira" class="w-[240px] lg:w-[300px] mb-7">
 
@@ -88,11 +95,9 @@
         >
       </div>
     </section>
-  </header>
 
-  <main class="flex flex-col items-center bg-sandyBlush px-6 md:px-16 xxl:px-0">
     <!-- Detalhes -->
-    <section class="flex flex-col max-w-xl lg:max-w-1140 w-full  my-12 lg:my-14">
+    <section class="flex flex-col max-w-xl lg:max-w-1140 w-full my-12 lg:my-14">
       <div class="flex flex-col lg:flex-row justify-between items-center gap-12 lg:mb-14">
         <img src="./img/img-consulta.png" alt="Imagem ilustrativa de atendimento" class="lg:w-3/6  filter drop-shadow-2xl object-cover rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]">
 
@@ -134,6 +139,94 @@
             </div>
           </div>
         </div>        
+      </div>
+
+      <div 
+        class="bg-gradient-white rounded-3xl overflow-hidden border-t-2 border-t-deepRed p-8 w-full self-center flex flex-col items-center my-12 lg:my-14 gap-8"
+      >
+        <div class="flex flex-col lg:flex-row justify-between items-start gap-12 ">
+          <div class="max-w-[460px] w-full">
+            <h3 class="text-2xl md:text-[2.25rem] text-center lg:text-start text-deepRed leading-[normal] mb-4">No curso, você vai aprender:</h3>
+
+            <div>
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>Toda a base teórica para a aplicação da toxina botulínica.</p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>Técnicas práticas e seguras de aplicação.</p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>Como montar seu atendimento mesmo sem uma grande estrutura.</p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>Estratégias para atrair seus primeiros pacientes e construir sua autoridade na área.</p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>Precificar seu procedimento.</p>
+              </div>
+
+              <div class="flex items-center gap-4">
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <p>100% online e com suporte para tirar todas as suas dúvidas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-[460px] w-full h-full">
+            <h3 class="text-2xl md:text-[2.25rem] text-center lg:text-start text-deepRed leading-[normal] mb-4">Quem pode fazer o curso?</h3>
+
+            <div class="flex flex-col justify-between gap-4">
+              <p class="text-center lg:text-start leading-[normal]">
+                Profissionais da área da saúde que tenham interesse em atuar ou expandir sua atuação na estética facial e que tenham autorização pelo seu conselho para realizar a prática de injetáveis.
+              </p>
+              <p class="text-deepRed font-semibold text-center lg:text-start leading-[normal] uppercase">
+                Você não precisa de experiência prévia, só da vontade de aprender e crescer.
+              </p>
+              <p class="text-center lg:text-start leading-[normal]">
+                Garanta sua vaga agora e dê o primeiro passo para transformar sua carreira.
+              </p>
+            </div>
+          </div>          
+        </div>
+
+        <button
+          class="bg-deepRed md:max-w-[228px] w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
+        >
+          Entrar Agora
+        </button>
       </div>
 
       <div class="flex flex-col items-center justify-between mt-12 lg:mt-14">
@@ -202,7 +295,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12 lg:mb-0 xl:max-w-[890px] self-center mt-12 lg:mt-14">
+      <div class="flex flex-col lg:flex-row items-center justify-between lg:gap-8 lg:mb-0 xl:max-w-[890px] self-center mt-12 lg:mt-14">
         <img src="./img/garantia.png" alt="Escudo de garantia" class="lg:max-w-[352px]">
 
         <div class="max-w-[406px]">
@@ -215,93 +308,7 @@
         </div>
       </div>
 
-      <div 
-      class="bg-gradient-white rounded-3xl overflow-hidden border-t-2 border-t-deepRed p-8 w-full self-center flex flex-col items-center mt-12 lg:mt-14 gap-8"
-    >
-      <div class="flex flex-col lg:flex-row justify-between items-start gap-12 ">
-        <div class="max-w-[460px] w-full">
-          <h3 class="text-2xl md:text-[2.25rem] text-center lg:text-start text-deepRed leading-[normal] mb-4">No curso, você vai aprender:</h3>
 
-          <div>
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>Toda a base teórica para a aplicação da toxina botulínica.</p>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>Técnicas práticas e seguras de aplicação.</p>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>Como montar seu atendimento mesmo sem uma grande estrutura.</p>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>Estratégias para atrair seus primeiros pacientes e construir sua autoridade na área.</p>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>Precificar seu procedimento.</p>
-            </div>
-
-            <div class="flex items-center gap-4">
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10.5905L8.4 15.6805L18 2.31934" stroke="#A24F34" stroke-width="3.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p>100% online e com suporte para tirar todas as suas dúvidas.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="max-w-[460px] w-full h-full">
-          <h3 class="text-2xl md:text-[2.25rem] text-center lg:text-start text-deepRed leading-[normal] mb-4">Quem pode fazer o curso?</h3>
-
-          <div class="flex flex-col justify-between gap-4">
-            <p class="text-center lg:text-start leading-[normal]">
-              Profissionais da área da saúde que tenham interesse em atuar ou expandir sua atuação na estética facial e que tenham autorização pelo seu conselho para realizar a prática de injetáveis.
-            </p>
-            <p class="text-deepRed font-semibold text-center lg:text-start leading-[normal] uppercase">
-              Você não precisa de experiência prévia, só da vontade de aprender e crescer.
-            </p>
-            <p class="text-center lg:text-start leading-[normal]">
-              Garanta sua vaga agora e dê o primeiro passo para transformar sua carreira.
-            </p>
-          </div>
-        </div>          
-      </div>
-
-      <button
-        class="bg-deepRed md:max-w-[228px] w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
-      >
-        Entrar Agora
-      </button>
-    </div>
 
     </section>
 
@@ -503,12 +510,14 @@
           Acompanhe conteúdos exclusivos, dicas valiosas e novidades sobre estética diretamente no meu perfil do Instagram. Junte-se à comunidade e fique por dentro de tudo que pode impulsionar sua atuação profissional.
         </p>
 
-        <button
+        <a
+          href="https://www.instagram.com/draisabellagferreira/" 
+          target="_blank"
           class="flex items-center justify-center gap-2 bg-deepRed full w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
         >
           <img src="./img/icons/instagram-white.svg" alt="Icone do instagram" class="w-[18px] h-[18px]">
           Seguir
-        </button>
+        </a>
       </div>
     </section>
 
@@ -545,7 +554,7 @@
         <p class="absolute text-[28px] font-normal text-center leading-[normal]">Perguntas Frequentes</p>
       </div>
       
-      <div class="space-y-4 w-full lg:max-w-[608px]">
+      <div class="space-y-4 w-full">
         <!-- Item 1 -->
         <div class="bg-softTerra rounded-md overflow-hidden">
           <button 
