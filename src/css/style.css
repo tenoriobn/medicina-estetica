@@ -48,10 +48,25 @@ header.scrolled {
   transform: translate(-50%, -50%);
   width: 90%;
   height: 90%;
-  background-color: #F56434;
+  background-color: #f56434b3;
   border-radius: 50%;
-  filter: blur(100px);
+  filter: blur(122px);
   z-index: 1;
+  opacity: 0.9;
+}
+
+.container-sobre::before {
+  content: ''; /* Cria o pseudo-elemento */
+  position: absolute;
+  top: 50%;
+  left: -24%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background-color: #f5643457;
+  border-radius: 50%;
+  filter: blur(180px);
+  z-index: -2;
   opacity: 0.9;
 }
 
