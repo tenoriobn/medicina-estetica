@@ -21,7 +21,9 @@
   <header class="fixed w-full flex flex-col items-center px-6 md:px-16 xxl:px-0 z-50">
     <nav class="relative lg:flex items-center justify-center lg:justify-end max-w-1140 w-full">
       <!-- Botão do Menu Mobile -->
-      <div class="flex lg:hidden items-center justify-end h-24 relative">
+      <div class="flex lg:hidden items-center justify-between h-24 relative">
+        <img src="./assets/icons/if-logomobile.svg" alt="" class="h-10">
+
         <button id="menu-button">
           <img 
             class="w-5 h-5"
@@ -50,26 +52,26 @@
 
         <ul class="text-white lg:text-black h-dvh lg:h-24 flex flex-col justify-center">
           <li class="flex flex-col lg:flex-row gap-8 text-center lg:text-start">
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#inicio">Inicio</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#detalhes">Detalhes</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#servicos">Serviços</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#depoimentos">Depoimentos</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#sobre">Sobre</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#resultados">Resultados</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#social">Social</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#aula">Aula</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#faq">FAQ</a>
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#inicio">Inicio</a>
+            <!-- <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#detalhes">Detalhes</a> -->
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#servicos">Serviços</a>
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#depoimentos">Depoimentos</a>
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#sobre">Sobre</a>
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#resultados">Resultados</a>
+            <!-- <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#social">Social</a>
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#aula">Aula</a> -->
+            <a class="text-xl lg:hover:text-deepRed hover:opacity-75 font-normal transition-all duration-300" href="#faq">FAQ</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="flex flex-col items-center  relative">
+  <main class="flex flex-col items-center relative">
     <!-- Chamada -->
-    <section id="inicio" class="flex flex-col items-center w-full bg-gradient-cherry-almond px-6 md:px-16 xxl:px-0">
-      <div class="max-w-xl lg:max-w-1140 w-full min-h-screen flex flex-col lg:flex-row items-center gap-12 pt-[152px] pb-[96px]">
-        <div class="lg:w-3/6 flex flex-col items-center lg:items-start gap-4 lg:gap-7">
+    <section id="inicio" class="inicio-container overflow-hidden relative flex flex-col items-center w-full bg-gradient-cherry-almond px-6 md:px-16 xxl:px-0 z-10">
+      <div class=" max-w-xl lg:max-w-1140 w-full min-h-screen flex flex-col lg:flex-row items-center gap-24 lg:gap-12 pt-[152px] pb-[96px]">
+        <div class="lg:w-3/6 flex flex-col items-center lg:items-start gap-4 lg:gap-7 z-[2]">
           <img src="./assets/icons/logotipo.svg" alt="Logotipo Dra. Isabella Ferreira" class="w-[240px] lg:w-[300px] mb-7">
   
           <h2 class="text-2xl md:text-[2.5rem] text-center lg:text-left font-medium lg:max-w-[516px] leading-8 md:leading-[50px]">
@@ -81,22 +83,21 @@
           </p>
           
           <div class="flex justify-center lg:justify-start gap-6 w-full">
-            <button
-              class="bg-deepRed md:max-w-[228px] w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
-            >
-              Saiba mais
-            </button>
+            <a class="flex justify-center items-center cursor-pointer before:ease relative h-12 md:max-w-[228px] w-full overflow-hidden border border-deepRed rounded-md bg-deepRed text-white text-lg font-normal uppercase shadow-brickRed transition-all duration-300 hover:opacity-90 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-15 before:duration-700 hover:before:-translate-x-60">
+              <span relative="relative z-10">Saiba mais</span>
+            </a>
+
             <a href="https://www.instagram.com/draisabellagferreira/" target="_blank" rel="noopener noreferrer">
-              <img src="./assets/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-12 hover:opacity-75 transition-all duration-300 filter drop-shadow-[0px_2px_20px_#89371C]">
+              <img src="./assets/icons/instagram-icon.svg" alt="Ícone do instagram" class="w-16 md:w-max h-12 hover:opacity-75 transition-all duration-300 filter drop-shadow-[0px_2px_20px_#89371C]">
             </a>
           </div>
         </div>
   
-        <div class="flex justify-end lg:w-3/6 relative lg:mt-0">
+        <div class="flex justify-end lg:w-3/6 relative lg:mt-0 img-inicio">
           <img 
             src="./assets/img/Dra. Isabella - Header.png" 
             alt="Imagem ilustrativa Dra. Isabella Ferreira"
-            class="max-w-[474px] w-full relative z-[5] filter drop-shadow-[0px_4px_60px_#ffffffda]"
+            class="max-w-[474px] w-full relative z-[5] filter drop-shadow-[0px_4px_60px_#ffffffec]"
           >
         </div>
       </div>
@@ -230,12 +231,10 @@
               </div>
             </div>          
           </div>
-  
-          <button
-            class="bg-deepRed md:max-w-[228px] w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
-          >
-            Saiba mais
-          </button>
+
+          <a class="flex justify-center items-center cursor-pointer before:ease relative h-12 md:max-w-[228px] w-full overflow-hidden border border-deepRed rounded-md bg-deepRed text-white text-lg font-normal uppercase shadow-brickRed transition-all duration-300 hover:opacity-90 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-15 before:duration-700 hover:before:-translate-x-60">
+            <span relative="relative z-10">Saiba mais</span>
+          </a>
         </div>
   
         <div class="flex flex-col items-center justify-between mt-12 lg:mt-14">
@@ -295,12 +294,10 @@
               <p class="font-bold text-5xl">R$ 9,70</p>
               <p class="font-bold text-lg">ou R$97 à vista</p>
             </div>
-  
-            <button
-              class="bg-gradient-cherry-brown max-w-[228px] w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
-            >
-              Contrate
-            </button>
+
+            <a class="flex justify-center items-center cursor-pointer before:ease relative h-12 md:max-w-[228px] w-full overflow-hidden rounded-md bg-gradient-cherry-brown text-white text-lg font-normal uppercase shadow-brickRed transition-all duration-300 hover:opacity-90 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-15 before:duration-700 hover:before:-translate-x-60">
+              <span relative="relative z-10">Contrate</span>
+            </a>
   
             <img src="./assets/icons/pagamentos.png" alt="Icones das formas de pagamento">
           </div>
@@ -349,6 +346,21 @@
           <div class="swiper-wrapper cursor-grab">
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
+                <img src="./assets/img/perfil-tatiane.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+  
+                <div class="flex flex-col justify-between gap-1">
+                  <h3 class="text-lg font-medium leading-[normal]">Tatiane Lima</h3>
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
+                </div>
+              </div>
+  
+              <p class="text-base text-left">
+                Nunca imaginei que seria capaz de realizar as aplicações de Botox com tanto sucesso. Este curso me proporcionou o conhecimento necessário para atuar com segurança e precisão, e a confiança que eu buscava para meu trabalho. As técnicas são modernas, eficazes e de fácil aplicação. A experiência da Dra. Isabella foi fundamental para o meu aprendizado, pois ela compartilhou dicas valiosas que fizeram toda a diferença. Hoje, meus resultados são cada vez melhores,  o que tem me trazido mais indicações e sucesso profissional.
+              </p>
+            </div>
+            
+            <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
+              <div class="flex items-center gap-3 mb-6">
                 <img src="./assets/img/perfil-carla.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
@@ -374,21 +386,6 @@
   
               <p class="text-base text-left">
                 Estava buscando me especializar e oferecer um serviço diferenciado para minhas clientes, e esse curso de Botox foi a escolha certa. As técnicas são detalhadas e o ensino é muito didático. Aprendi tudo o que precisava para realizar aplicações seguras e obter ótimos resultados.
-              </p>
-            </div>
-  
-            <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
-              <div class="flex items-center gap-3 mb-6">
-                <img src="./assets/img/perfil-tatiane.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
-  
-                <div class="flex flex-col justify-between gap-1">
-                  <h3 class="text-lg font-medium leading-[normal]">Tatiane Lima</h3>
-                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
-                </div>
-              </div>
-  
-              <p class="text-base text-left">
-                Nunca imaginei que seria capaz de realizar as aplicações de Botox com tanto sucesso. Este curso me proporcionou o conhecimento necessário para atuar com segurança e precisão, e a confiança que eu buscava para meu trabalho. As técnicas são modernas, eficazes e de fácil aplicação. A experiência da Dra. Isabella foi fundamental para o meu aprendizado, pois ela compartilhou dicas valiosas que fizeram toda a diferença. Hoje, meus resultados são cada vez melhores,  o que tem me trazido mais indicações e sucesso profissional.
               </p>
             </div>
   
@@ -443,7 +440,7 @@
           </p>
         </div>
 
-        <div class="img-sobre relative z-[1] mt-12 lg:mt-0 w-2/4">
+        <div class="img-sobre relative z-[1] mt-12 lg:mt-0 w-3/4 lg:w-2/4">
           <img 
             src="./assets/img/Dra Isabella - Sobre.png" 
             alt="Imagem ilustrativa da Dra. Isabella Ferreira"
@@ -511,9 +508,9 @@
     <!-- Social -->
     <section id="social" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-blush-fade">
       <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-center gap-12 my-12 lg:my-14 z-10">
-        <img src="./assets/img/Dra Isabella - Social.png" alt="Imagem ilustrativa da Dra Isabella Ferreira" class="md:w-[70%] lg:w-3/6">
+        <img src="./assets/img/Dra Isabella - Social.png" alt="Imagem ilustrativa da Dra Isabella Ferreira" class="md:w-[70%] lg:w-3/6 filter drop-shadow-[0px_4px_120px_#fff]">
   
-        <div class="lg:max-w-[430px] full grid gap-8">
+        <div class="lg:max-w-[430px] full grid gap-8 z-[2]">
           <h2 class="text-2xl md:text-[2.25rem] font-normal text-center lg:text-start leading-[normal] text-deepRed">
             Siga-me no Instagram!
           </h2>
@@ -522,14 +519,16 @@
             Acompanhe conteúdos exclusivos, dicas valiosas e novidades sobre estética diretamente no meu perfil do Instagram. Junte-se à comunidade e fique por dentro de tudo que pode impulsionar sua atuação profissional.
           </p>
   
-          <a
+          <a 
             href="https://www.instagram.com/draisabellagferreira/" 
             target="_blank"
-            class="flex items-center justify-center gap-2 bg-deepRed full w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
-          >
-            <img src="./assets/icons/instagram-white.svg" alt="Icone do instagram" class="w-[18px] h-[18px]">
-            Seguir
+            class="flex justify-center items-center cursor-pointer before:ease relative w-full h-12 overflow-hidden border border-deepRed rounded-md bg-deepRed text-white text-lg font-normal uppercase shadow-brickRed transition-all duration-300 hover:opacity-90 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-15 before:duration-700 hover:before:-translate-x-[430px]">
+            <span class="flex items-center justify-center gap-2 w-full relative z-10">
+              <img src="./assets/icons/instagram-white.svg" alt="Icone do instagram" class="w-[18px] h-[18px]">
+              Seguir
+            </span>
           </a>
+
         </div>
       </div>
     </section>
@@ -563,7 +562,9 @@
 
     <!-- FAQ -->
     <section id="faq" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-fade-blush">
-      <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-center lg:items-start   gap-2 lg:gap-12 mt-12 lg:mt-14 mb-24 lg:mb-28">
+      <div 
+        class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-center lg:items-start   gap-2 lg:gap-12 mt-12 lg:mt-14 mb-24 lg:mb-28"
+      >
         <div class="lg:hidden relative flex items-center w-max md:top-[-24px] md:left-[-8px]">
           <h2 class="text-[124px] font-bold text-transparent bg-clip-text bg-gradient-cherry-brown opacity-60 leading-[normal]">FAQ</h2>
           <p class="absolute text-[28px] font-normal text-center leading-[normal]">Perguntas Frequentes</p>
@@ -573,7 +574,7 @@
           <!-- Item 1 -->
           <div class="bg-softTerra rounded-md overflow-hidden">
             <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
+              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
               data-accordion-button
             >
               <div class="w-5 h-5">
@@ -594,7 +595,7 @@
           <!-- Item 2 -->
           <div class="bg-softTerra rounded-md overflow-hidden">
             <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
+              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
               data-accordion-button
             >
               <div class="w-5 h-5">
@@ -615,7 +616,7 @@
           <!-- Item 3 -->
           <div class="bg-softTerra rounded-md overflow-hidden">
             <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
+              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left  text-base lg:text-lg text-white bg-deepRed hover:opacity-75 transition leading-[normal!important]"
               data-accordion-button
             >
               <div class="w-5 h-5">
@@ -636,7 +637,7 @@
           <!-- Item 4 -->
           <div class="bg-softTerra rounded-md overflow-hidden">
             <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
+              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
               data-accordion-button
             >
               <div class="w-5 h-5">
@@ -653,132 +654,144 @@
               </p>
             </div>
           </div>
-  
-          <!-- Item 5 -->
-          <div class="bg-softTerra rounded-md overflow-hidden">
-            <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
-              data-accordion-button
-            >
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
-                </svg>
+
+          <div id="hidden-faqs" class="hidden space-y-4">
+            <!-- Item 5 -->
+            <div class="bg-softTerra rounded-md overflow-hidden">
+              <button 
+                class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
+                data-accordion-button
+              >
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
+                  </svg>
+                </div>
+                
+                O curso é teórico ou prático?
+              </button>
+              <div class="font-light px-6 py-4 hidden" data-accordion-content>
+                <p class="text-white">
+                  O curso é completo, com aulas teóricas detalhadas e vídeos das técnicas de aplicação. Além disso, você terá suporte para dúvidas durante 90 dias.
+                </p>
               </div>
-              
-              O curso é teórico ou prático?
-            </button>
-            <div class="font-light px-6 py-4 hidden" data-accordion-content>
-              <p class="text-white">
-                O curso é completo, com aulas teóricas detalhadas e vídeos das técnicas de aplicação. Além disso, você terá suporte para dúvidas durante 90 dias.
-              </p>
+            </div>
+    
+            <!-- Item 6 -->
+            <div class="bg-softTerra rounded-md overflow-hidden">
+              <button 
+                class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
+                data-accordion-button
+              >
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
+                  </svg>
+                </div>
+                
+                Depois de concluir o curso, já posso atender pacientes?
+              </button>
+              <div class="font-light px-6 py-4 hidden" data-accordion-content>
+                <p class="text-white">
+                  Sim, desde que você esteja devidamente registrado no seu conselho profissional e siga as regulamentações locais. O curso fornecerá o conhecimento técnico necessário para começar a atender com confiança.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Item 7 -->
+            <div class="bg-softTerra rounded-md overflow-hidden">
+              <button 
+                class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
+                data-accordion-button
+              >
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
+                  </svg>
+                </div>
+                
+                O mercado para aplicação de toxina botulínica é realmente lucrativo?
+              </button>
+              <div class="font-light px-6 py-4 hidden" data-accordion-content>
+                <p class="text-white">
+                  Sim! A toxina botulínica é um dos procedimentos estéticos mais procurados, tanto para fins estéticos quanto terapêuticos. Além disso, é um procedimento rápido e com alta margem de lucro, ideal para quem quer expandir sua atuação e aumentar sua renda.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Item 8 -->
+            <div class="bg-softTerra rounded-md overflow-hidden">
+              <button 
+                class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
+                data-accordion-button
+              >
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
+                  </svg>
+                </div>
+                
+                O curso ensina sobre os produtos utilizados?
+              </button>
+              <div class="font-light px-6 py-4 hidden" data-accordion-content>
+                <p class="text-white">
+                  Sim! Durante as aulas, você aprenderá a escolher as marcas mais confiáveis de toxina botulínica, calcular as dosagens corretas e fazer o armazenamento adequado, garantindo a segurança e eficácia do procedimento.
+                </p>
+              </div>
+            </div>
+    
+            <!-- Item 9 -->
+            <div class="bg-softTerra rounded-md overflow-hidden">
+              <button 
+                class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left text-base lg:text-lg text-white leading-[normal!important] bg-deepRed hover:opacity-75 transition"
+                data-accordion-button
+              >
+                <div class="w-5 h-5">
+                  <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
+                  </svg>
+                </div>
+                
+                O curso oferece certificado?
+              </button>
+              <div class="font-light px-6 py-4 hidden" data-accordion-content>
+                <p class="text-white">
+                  Sim! Ao concluir o curso, você receberá um certificado de participação que comprova sua capacitação na técnica. Esse documento é importante para demonstrar sua qualificação, agregar credibilidade ao seu trabalho e destacar-se no mercado estético.
+                </p>
+              </div>
             </div>
           </div>
-  
-          <!-- Item 6 -->
-          <div class="bg-softTerra rounded-md overflow-hidden">
-            <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
-              data-accordion-button
-            >
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
-                </svg>
-              </div>
-              
-              Depois de concluir o curso, já posso atender pacientes?
+
+          <div class="w-full flex justify-center items-center">
+            <button id="show-more" class="flex justify-center items-center h-12 w-12 rounded-full bg-deepRed text-white hover:opacity-75 transition animate-bounceY">              
+              <svg class="w-6 h-6 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+              </svg>
             </button>
-            <div class="font-light px-6 py-4 hidden" data-accordion-content>
-              <p class="text-white">
-                Sim, desde que você esteja devidamente registrado no seu conselho profissional e siga as regulamentações locais. O curso fornecerá o conhecimento técnico necessário para começar a atender com confiança.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Item 7 -->
-          <div class="bg-softTerra rounded-md overflow-hidden">
-            <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
-              data-accordion-button
-            >
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
-                </svg>
-              </div>
-              
-              O mercado para aplicação de toxina botulínica é realmente lucrativo?
-            </button>
-            <div class="font-light px-6 py-4 hidden" data-accordion-content>
-              <p class="text-white">
-                Sim! A toxina botulínica é um dos procedimentos estéticos mais procurados, tanto para fins estéticos quanto terapêuticos. Além disso, é um procedimento rápido e com alta margem de lucro, ideal para quem quer expandir sua atuação e aumentar sua renda.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Item 8 -->
-          <div class="bg-softTerra rounded-md overflow-hidden">
-            <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
-              data-accordion-button
-            >
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
-                </svg>
-              </div>
-              
-              O curso ensina sobre os produtos utilizados?
-            </button>
-            <div class="font-light px-6 py-4 hidden" data-accordion-content>
-              <p class="text-white">
-                Sim! Durante as aulas, você aprenderá a escolher as marcas mais confiáveis de toxina botulínica, calcular as dosagens corretas e fazer o armazenamento adequado, garantindo a segurança e eficácia do procedimento.
-              </p>
-            </div>
-          </div>
-  
-          <!-- Item 9 -->
-          <div class="bg-softTerra rounded-md overflow-hidden">
-            <button 
-              class="w-full h-[74px] flex items-center gap-4 px-6 py-4 text-left leading-[normal] text-base lg:text-lg text-white font-normal bg-deepRed hover:opacity-75 transition"
-              data-accordion-button
-            >
-              <div class="w-5 h-5">
-                <svg class="w-5 h-5 transform transition-transform" data-accordion-icon width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.25 8.56704C14.5833 8.75949 14.5833 9.24062 14.25 9.43307L0.750001 17.2273C0.416668 17.4197 2.33568e-07 17.1792 2.50393e-07 16.7943L9.31786e-07 1.20582C9.4861e-07 0.820924 0.416668 0.58036 0.750001 0.772811L14.25 8.56704Z" fill="white"/>
-                </svg>
-              </div>
-              
-              O curso oferece certificado?
-            </button>
-            <div class="font-light px-6 py-4 hidden" data-accordion-content>
-              <p class="text-white">
-                Sim! Ao concluir o curso, você receberá um certificado de participação que comprova sua capacitação na técnica. Esse documento é importante para demonstrar sua qualificação, agregar credibilidade ao seu trabalho e destacar-se no mercado estético.
-              </p>
-            </div>
+            
           </div>
         </div>
   
         <div class="lg:max-w-[358px] lg:w-full">
           <div class="hidden relative lg:flex items-center w-max mb-2 md:top-[-24px] md:left-[-8px]">
             <h2 class="text-[124px] font-bold text-transparent bg-clip-text bg-gradient-cherry-brown opacity-60 leading-[normal]">FAQ</h2>
-            <p class="absolute text-[28px] font-normal text-center leading-[normal]">Perguntas Frequentes</p>
+            <p class="absolute text-[28px] text-center leading-[normal]">Perguntas Frequentes</p>
           </div>
   
           <p class="text-2xl md:text-5xl font-medium text-center lg:text-start leading-[normal] mt-12 lg:mt-0 mb-4">
             Ainda ficou com alguma dúvida?
           </p>
-          <p class="text-center lg:text-start mb-6">
+          <p class="text-center lg:text-start mb-6 lg:mb-8">
             Chame no WhatsApp, iremos te responder, não é nenhuma assistente virtual, bot e muito menos o estagiário.
           </p>
-  
-          <button
-            class="bg-gradient-cherry-brown w-full h-14 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 flex items-center justify-center gap-2 px-4 md:px-8"
-          >
-            <img src="./assets/icons/whatsapp.svg" alt="Ícone do whatsapp" class="w-6">
-            Chamar no WhatsApp
-          </button>
+
+          <a 
+            class="flex justify-center items-center cursor-pointer before:ease relative w-full h-12 overflow-hidden  rounded-md bg-gradient-cherry-brown text-white text-lg leading-[normal!important] uppercase shadow-brickRed transition-all duration-300 hover:opacity-90 before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-15 before:duration-700 hover:before:-translate-x-[430px]">
+            <span class="flex items-center justify-center gap-2 w-full relative z-10">
+              <img src="./assets/icons/whatsapp.svg" alt="Ícone do whatsapp" class="w-6">
+              Chamar no WhatsApp
+            </span>
+          </a>
         </div>
       </div>
     </section>    

@@ -42,6 +42,15 @@ export default {
         xl: "1200px",
         xxl: "1442px",
       },
+      keyframes: {
+        bounceY: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-4px)' },
+        },
+      },
+      animation: {
+        bounceY: 'bounceY 1.5s ease-in-out infinite',
+      },
     },
   }
 }

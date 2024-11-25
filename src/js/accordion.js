@@ -27,3 +27,17 @@ document.querySelectorAll('[data-accordion-button]').forEach(button => {
     icon.classList.toggle('rotate-90');
   });
 });
+
+document.getElementById("show-more").addEventListener("click", function () {
+  const hiddenFaqs = document.getElementById("hidden-faqs");
+  const isHidden = hiddenFaqs.classList.contains("hidden");
+  const icon = this.querySelector("svg"); // Seleciona o ícone dentro do botão
+  
+  if (isHidden) {
+    hiddenFaqs.classList.remove("hidden");
+    icon.classList.add("rotate-180");
+  } else {
+    hiddenFaqs.classList.add("hidden");
+    icon.classList.remove("rotate-180");
+  }
+});

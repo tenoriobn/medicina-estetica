@@ -21,7 +21,30 @@ header.scrolled {
 }
 
 .bg-card {
+  position: relative;
+  overflow: hidden; /* Garante que o efeito não extrapole o elemento */
+}
+
+.bg-card h3, .bg-card p {
+  z-index: 1;
+}
+
+.bg-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit; /* Reaproveita a mesma imagem de fundo */
   background-size: cover;
+  background-position: center;
+  transition: transform 1s ease-in-out;
+  transform: scale(1);
+}
+
+.bg-card:hover::before {
+  transform: scale(1.2); /* Aumenta a escala para criar o efeito de zoom */
 }
 
 .bg-card-one {
@@ -41,36 +64,12 @@ header.scrolled {
   height: 100%;
 }
 
-.img-sobre::before {
-  content: ''; /* Cria o pseudo-elemento */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
-  background-color: #f56434b3;
-  border-radius: 50%;
-  filter: blur(122px);
-  z-index: 1;
-  opacity: 0.9;
+/* Estilo Player de Resultados */
+.playPauseBtn img {
+  position: relative;
+  left: 3px;
+  top: 1px;
 }
-
-.container-sobre::before {
-  content: ''; /* Cria o pseudo-elemento */
-  position: absolute;
-  top: 50%;
-  left: -24%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 500px;
-  background-color: #f5643457;
-  border-radius: 50%;
-  filter: blur(180px);
-  z-index: -2;
-  opacity: 0.9;
-}
-
 
 /* Estilos do play */
 .plyr__video-wrapper {
@@ -153,4 +152,81 @@ header.scrolled {
     width: 122px!important;
     height: 122px!important;
   }
+}
+
+/* Efeitos */
+
+.inicio-container::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: #ffffffad;
+  border-radius: 50%;
+  filter: blur(180px);
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.inicio-container::after {
+  content: '';
+  position: absolute;
+  bottom: 46%;
+  right: -4%;
+  transform: translate(50%, 50%);
+  width: 20%;
+  height: 40%;
+  background-color: #6c3e2e4d;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.img-inicio::before {
+  content: '';
+  position: absolute;
+  top: 36%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff94;
+  border-radius: 50%;
+  filter: blur(122px);
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.img-sobre::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  background-color: #f56434b3;
+  border-radius: 50%;
+  filter: blur(122px);
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.container-sobre::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -24%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background-color: #f5643457;
+  border-radius: 50%;
+  filter: blur(180px);
+  z-index: -2;
+  opacity: 0.9;
 }
