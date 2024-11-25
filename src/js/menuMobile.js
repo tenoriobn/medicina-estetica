@@ -4,6 +4,14 @@ const menuLinks = menu.querySelectorAll('a');
 const header = document.querySelector('header');
 
 document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('header');
+
+  if (window.scrollY > 1) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 1) {
       header.classList.add('scrolled');
