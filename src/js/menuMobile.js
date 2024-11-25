@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
 menuButton.forEach(button => {
   button.addEventListener('click', () => {
     const isOpen = menu.classList.contains('left-0');

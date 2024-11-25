@@ -1,5 +1,5 @@
-import playIcon from '../../img/icons/play.svg';
-import pauseIcon from '../../img/icons/pause.svg';
+import playIcon from '../../assets/icons/play.svg';
+import pauseIcon from '../../assets/icons/pause.svg';
 
 // Seleciona todos os elementos de vídeo e botões de play/pause
 const videos = document.querySelectorAll('.videoPlayer');

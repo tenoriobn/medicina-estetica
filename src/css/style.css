@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 html {
+  scroll-behavior: smooth !important;
   @apply font-archivo;
 }
 
@@ -24,15 +25,15 @@ header.scrolled {
 }
 
 .bg-card-one {
-  background-image: url(../../img/img-card1.png);
+  background-image: url(../../assets/img/img-card1.png);
 }
 
 .bg-card-two {
-  background-image: url(../../img/img-card2.png);
+  background-image: url(../../assets/img/img-card2.png);
 }
 
 .bg-card-three {
-  background-image: url(../../img/img-card3.png);
+  background-image: url(../../assets/img/img-card3.png);
 }
 
 .swiper {

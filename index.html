@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <link rel="icon" type="image/svg+xml" href="./img/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/vite.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -25,48 +25,54 @@
         <button id="menu-button">
           <img 
             class="w-5 h-5"
-            src="./img/icons/hamburguer.svg" 
+            src="./assets/icons/hamburguer.svg" 
             alt="Botão para Menu Mobile"
           />
         </button>
       </div>
   
       <!-- Menu -->
-      <div 
-        id="menu"
-        class="flex flex-col items-center lg:items-end lg:justify-end fixed lg:relative top-0 left-[-100%] lg:left-auto w-full sm:w-full md:w-[70%] lg:w-full lg:max-w-1140 h-dvh lg:h-24 transition-all duration-300 lg:bg-inherit z-40"
-      >
-        <div class="flex lg:hidden items-center justify-end h-[108px] w-full px-6 xxl:px-0 relative z-50">
-          <button id="menu-button">
-            <img 
-              class="w-4 h-4"
-              src="./img/icons/close.svg" 
-              alt="Botão para fechar Menu Mobile"
-            />
-          </button>
-        </div>
-
-        <ul class="text-black h-dvh lg:h-24 flex flex-col justify-center">
-          <li class="flex flex-col lg:flex-row gap-8 text-center lg:text-start">
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#">Inicio</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#detalhes">Detalhes</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#servicos">Serviços</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#depoimentos">Depoimentos</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#sobre">Sobre</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#resultados">Resultados</a>
-            <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </div>
+       <div class="flex flex-col items-center lg:items-end lg:justify-end fixed lg:relative top-0 left-[-100%] lg:left-auto w-full sm:w-full md:w-[100%] lg:w-full lg:max-w-1140 h-dvh lg:h-24 transition-all duration-300 lg:bg-inherit z-40">
+         <div 
+           id="menu"
+           class="flex flex-col items-center lg:items-end lg:justify-end fixed lg:relative top-0 left-[-100%] lg:left-auto w-full sm:w-full md:w-[70%] lg:w-full lg:max-w-1140 h-dvh lg:h-24 transition-all duration-300 lg:bg-inherit z-40"
+         >
+           <img src="./assets/img/floral.svg" alt="" class="lg:hidden absolute opacity-[.05] top-[-180px] left-[-267px] md:top-[-250px] md:left-[-398px] transform translate-x-10 translate-y-5">
+   
+           <div class="flex lg:hidden items-center justify-end h-[108px] w-full px-6 xxl:px-0 relative z-50">
+             <button id="menu-button">
+               <img 
+                 class="w-4 h-4"
+                 src="./assets/icons/close.svg" 
+                 alt="Botão para fechar Menu Mobile"
+               />
+             </button>
+           </div>
+   
+           <ul class="text-white lg:text-black h-dvh lg:h-24 flex flex-col justify-center">
+             <li class="flex flex-col lg:flex-row gap-8 text-center lg:text-start">
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#inicio">Inicio</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#detalhes">Detalhes</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#servicos">Serviços</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#depoimentos">Depoimentos</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#sobre">Sobre</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#resultados">Resultados</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#social">Social</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#aula">Aula</a>
+               <a class="text-xl hover:opacity-75 font-normal transition-all duration-300" href="#faq">FAQ</a>
+             </li>
+           </ul>
+         </div>
+       </div>
     </nav>
   </header>
 
-  <main class="flex flex-col items-center ">
+  <main class="flex flex-col items-center  relative">
     <!-- Chamada -->
-    <section class="flex flex-col items-center w-full bg-gradient-cherry-almond px-6 md:px-16 xxl:px-0">
+    <section id="inicio" class="flex flex-col items-center w-full bg-gradient-cherry-almond px-6 md:px-16 xxl:px-0">
       <div class="max-w-xl lg:max-w-1140 w-full min-h-screen flex flex-col lg:flex-row items-center gap-12 pt-[152px] pb-[96px]">
         <div class="lg:w-3/6 flex flex-col items-center lg:items-start gap-4 lg:gap-7">
-          <img src="./img/icons/logotipo.svg" alt="Logotipo Dra. Isabella Ferreira" class="w-[240px] lg:w-[300px] mb-7">
+          <img src="./assets/icons/logotipo.svg" alt="Logotipo Dra. Isabella Ferreira" class="w-[240px] lg:w-[300px] mb-7">
   
           <h2 class="text-2xl md:text-[2.5rem] text-center lg:text-left font-medium lg:max-w-[516px] leading-8 md:leading-[50px]">
             Domine o Botox e Conquiste a Liberdade Financeira no <span class="text-deepRed">Setor de Estética</span>
@@ -83,14 +89,14 @@
               Saiba mais
             </button>
             <a href="https://www.instagram.com/draisabellagferreira/" target="_blank" rel="noopener noreferrer">
-              <img src="./img/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-12 hover:opacity-75 transition-all duration-300 filter drop-shadow-[0px_2px_20px_#89371C]">
+              <img src="./assets/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-12 hover:opacity-75 transition-all duration-300 filter drop-shadow-[0px_2px_20px_#89371C]">
             </a>
           </div>
         </div>
   
         <div class="flex justify-end lg:w-3/6 relative lg:mt-0">
           <img 
-            src="./img/Dra. Isabella - Header.png" 
+            src="./assets/img/Dra. Isabella - Header.png" 
             alt="Imagem ilustrativa Dra. Isabella Ferreira"
             class="max-w-[474px] w-full relative z-[5] filter drop-shadow-[0px_4px_60px_#ffffffda]"
           >
@@ -99,7 +105,7 @@
 
       <div class="flex flex-col max-w-xl lg:max-w-1140 w-full my-12 lg:my-14">
         <div class="flex flex-col lg:flex-row justify-between items-center gap-12">
-          <img src="./img/img-consulta.png" alt="Imagem ilustrativa de atendimento" class="lg:w-3/6  filter drop-shadow-2xl object-cover rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]">
+          <img src="./assets/img/img-consulta.png" alt="Imagem ilustrativa de atendimento" class="lg:w-3/6  filter drop-shadow-2xl object-cover rounded-tl-[60px] rounded-tr-[6px] rounded-bl-[6px] rounded-br-[60px]">
   
           <div class="flex flex-col items-center gap-4 xl:gap-7 lg:max-w-[504px] w-full mb-12 lg:mb-0">
             <h3 class="text-2xl xl:text-[2rem] text-center lg:text-start leading-[normal]">
@@ -144,7 +150,7 @@
     </section>
 
     <!-- Detalhes -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
+    <section id="detalhes" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
       <div class="flex flex-col max-w-xl lg:max-w-1140 w-full my-12 lg:my-14">
         <div 
           class="bg-gradient-white rounded-3xl overflow-hidden border-t-2 border-t-deepRed p-8 w-full self-center flex flex-col items-center mb-12 lg:mb-14 gap-8"
@@ -272,7 +278,7 @@
     </section>
 
     <!-- Serviços -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
+    <section id="servicos" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
       <div class="flex flex-col max-w-xl lg:max-w-1140 w-full my-12 lg:my-14">
         <div class="flex flex-col lg:flex-row items-start lg:h-[500px] rounded-2xl overflow-hidden self-center mb-12 lg:mb-14">
           <div class="bg-white w-full lg:w-2/4 h-full p-10 flex items-center justify-center">
@@ -283,7 +289,7 @@
           </div>
   
           <div class="bg-deepRed w-full lg:w-2/4 h-full flex flex-col items-center justify-center gap-8 p-10">
-            <img src="./img/icons/logotipo-white.svg" alt="Logo tipo da Dra. Isabella">
+            <img src="./assets/icons/logotipo-white.svg" alt="Logo tipo da Dra. Isabella">
   
             <div class="text-center text-white font-light">
               <p>De: R$297,00</p>
@@ -298,12 +304,12 @@
               Contrate
             </button>
   
-            <img src="./img/icons/pagamentos.png" alt="Icones das formas de pagamento">
+            <img src="./assets/icons/pagamentos.png" alt="Icones das formas de pagamento">
           </div>
         </div>
   
         <div class="flex flex-col lg:flex-row items-center justify-between lg:gap-8 lg:mb-0 xl:max-w-[890px] self-center mt-12 lg:mt-14">
-          <img src="./img/garantia.png" alt="Escudo de garantia" class="lg:max-w-[352px]">
+          <img src="./assets/img/garantia.png" alt="Escudo de garantia" class="lg:max-w-[352px]">
   
           <div class="max-w-[406px]">
             <h3 class="text-2xl md:text-[2.25rem] font-normal text-center lg:text-start leading-[normal] text-deepRed uppercase mb-6">
@@ -318,7 +324,7 @@
     </section>
 
     <!-- Depoimentos -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
+    <section id="depoimentos" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
       <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-start gap-12 my-12 lg:my-14">
         <div class="lg:max-w-[380px]">
           <h2 class="text-2xl md:text-[2.25rem] font-medium text-center lg:text-start text-deepRed leading-[normal] mb-4">
@@ -333,23 +339,23 @@
             <button 
               class="button-prev w-7 h-7 flex justify-center items-center rounded-full relative hover:opacity-75 transition cursor-pointer" 
               id="button-prev">
-              <img src="./img/icons/prev-slide.svg" alt="Botão de Prev do slide" class="absolute left-[9px]">
+              <img src="./assets/icons/prev-slide.svg" alt="Botão de Prev do slide" class="absolute left-[9px]">
             </button>
             <button 
               class="button-next w-7 h-7 flex justify-center items-center rounded-full relative hover:opacity-75 transition cursor-pointer" 
               id="button-next">
-              <img src="./img/icons/prev-slide.svg" alt="Botão Next do slide" class="rotate-180 absolute left-[11px]">
+              <img src="./assets/icons/prev-slide.svg" alt="Botão Next do slide" class="rotate-180 absolute left-[11px]">
             </button>
           </div>
   
           <div class="swiper-wrapper cursor-grab">
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
-                <img src="./img/perfil-carla.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+                <img src="./assets/img/perfil-carla.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
                   <h3 class="text-lg font-medium leading-[normal]">Carla Mendes</h3>
-                  <img src="./img/stars.svg" alt="Icone de estrelas">
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
                 </div>
               </div>
   
@@ -360,11 +366,11 @@
   
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
-                <img src="./img/perfil-mariana.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+                <img src="./assets/img/perfil-mariana.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
                   <h3 class="text-lg font-medium leading-[normal]">Mariana Alves</h3>
-                  <img src="./img/stars.svg" alt="Icone de estrelas">
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
                 </div>
               </div>
   
@@ -375,11 +381,11 @@
   
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
-                <img src="./img/perfil-tatiane.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+                <img src="./assets/img/perfil-tatiane.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
                   <h3 class="text-lg font-medium leading-[normal]">Tatiane Lima</h3>
-                  <img src="./img/stars.svg" alt="Icone de estrelas">
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
                 </div>
               </div>
   
@@ -390,11 +396,11 @@
   
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
-                <img src="./img/perfil-vanessa.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+                <img src="./assets/img/perfil-vanessa.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
                   <h3 class="text-lg font-medium leading-[normal]">Vanessa Silva</h3>
-                  <img src="./img/stars.svg" alt="Icone de estrelas">
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
                 </div>
               </div>
   
@@ -405,11 +411,11 @@
   
             <div class="swiper-slide flex flex-col bg-white p-6 rounded-md w-[312px] h-max">
               <div class="flex items-center gap-3 mb-6">
-                <img src="./img/perfil-juliana.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
+                <img src="./assets/img/perfil-juliana.jpeg" alt="Imagem de Perfil" class="w-12 h-12 rounded-full object-cover">
   
                 <div class="flex flex-col justify-between gap-1">
                   <h3 class="text-lg font-medium leading-[normal]">Juliana Costa</h3>
-                  <img src="./img/stars.svg" alt="Icone de estrelas">
+                  <img src="./assets/img/stars.svg" alt="Icone de estrelas">
                 </div>
               </div>
   
@@ -423,7 +429,7 @@
     </section>
 
     <!-- Sobre -->
-    <section class="flex flex-col items-center w-full gap-12 mt-12 lg:mt-14 px-6 md:px-16 xxl:px-0">
+    <section id="sobre" class="flex flex-col items-center w-full gap-12 mt-12 lg:mt-14 px-6 md:px-16 xxl:px-0">
       <div class="relative container-sobre flex flex-col lg:flex-row justify-between items-center max-w-xl lg:max-w-1140 w-full gap-8 z-10">
         <div class="w-full lg:max-w-[452px]">
           <h2 class="text-2xl md:text-[2.25rem] font-normal text-center lg:text-start leading-[normal] text-deepRed mb-8 ">
@@ -441,7 +447,7 @@
 
         <div class="img-sobre relative z-[1] mt-12 lg:mt-0 w-2/4">
           <img 
-            src="./img/Dra Isabella - Sobre.png" 
+            src="./assets/img/Dra Isabella - Sobre.png" 
             alt="Imagem ilustrativa da Dra. Isabella Ferreira"
             class="filter drop-shadow-[0px_4px_100px_#FFF] relative z-[1]"
           >
@@ -450,7 +456,7 @@
     </section>
 
     <!-- Resultados -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-blushBeige">
+    <section id="resultados" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-blushBeige">
       <div class="flex flex-col items-center justify-between max-w-xl lg:max-w-1140 w-full mt-24 lg:mt-28 mb-12 lg:mb-14 z-10">
         <h2 class="text-2xl md:text-[2.25rem] font-normal leading-[normal] text-deepRed mb-8 max-w-[500px] text-center self-center">
           Experiência de quem participou do Curso
@@ -505,9 +511,9 @@
     </section>
 
     <!-- Social -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-blush-fade">
+    <section id="social" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-blush-fade">
       <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-center gap-12 my-12 lg:my-14 z-10">
-        <img src="./img/Dra Isabella - Social.png" alt="Imagem ilustrativa da Dra Isabella Ferreira" class="md:w-[70%] lg:w-3/6">
+        <img src="./assets/img/Dra Isabella - Social.png" alt="Imagem ilustrativa da Dra Isabella Ferreira" class="md:w-[70%] lg:w-3/6">
   
         <div class="lg:max-w-[430px] full grid gap-8">
           <h2 class="text-2xl md:text-[2.25rem] font-normal text-center lg:text-start leading-[normal] text-deepRed">
@@ -523,7 +529,7 @@
             target="_blank"
             class="flex items-center justify-center gap-2 bg-deepRed full w-full h-12 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 shadow-brickRed"
           >
-            <img src="./img/icons/instagram-white.svg" alt="Icone do instagram" class="w-[18px] h-[18px]">
+            <img src="./assets/icons/instagram-white.svg" alt="Icone do instagram" class="w-[18px] h-[18px]">
             Seguir
           </a>
         </div>
@@ -531,7 +537,7 @@
     </section>
 
     <!-- Aula Demonstrativa -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
+    <section id="aula" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0">
       <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col justify-between items-center gap-12 my-12 lg:my-14">
         <h2 class="text-2xl md:text-[2.25rem] font-normal leading-[normal] text-deepRed text-center max-w-[600px]">
           Ainda está inseguro? <br>
@@ -540,7 +546,7 @@
         
         <div id="player-container">
           <video 
-            poster="./img/capa-videoaula.jpg"
+            poster="./assets/img/capa-videoaula.jpg"
             id="player" 
             crossorigin 
             playsinline 
@@ -558,7 +564,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-fade-blush">
+    <section id="faq" class="flex flex-col items-center w-full px-6 md:px-16 xxl:px-0 bg-gradient-fade-blush">
       <div class="max-w-xl lg:max-w-1140 w-full  flex flex-col lg:flex-row justify-between items-center lg:items-start   gap-2 lg:gap-12 mt-12 lg:mt-14 mb-24 lg:mb-28">
         <div class="lg:hidden relative flex items-center w-max md:top-[-24px] md:left-[-8px]">
           <h2 class="text-[124px] font-bold text-transparent bg-clip-text bg-gradient-cherry-brown opacity-60 leading-[normal]">FAQ</h2>
@@ -772,7 +778,7 @@
           <button
             class="bg-gradient-cherry-brown w-full h-14 rounded-md text-white text-lg font-normal uppercase hover:opacity-75 transition-all duration-300 flex items-center justify-center gap-2 px-4 md:px-8"
           >
-            <img src="./img//icons/whatsapp.svg" alt="Ícone do whatsapp" class="w-6">
+            <img src="./assets/icons/whatsapp.svg" alt="Ícone do whatsapp" class="w-6">
             Chamar no WhatsApp
           </button>
         </div>
@@ -783,7 +789,7 @@
   <footer class="flex flex-col items-center bg-blushBeige px-6 md:px-16 xxl:px-0">
     <section class="max-w-xl lg:max-w-1140 w-full  flex flex-col md:flex-row justify-between items-center gap-4 md:gap-12 py-8 border-t border-deepRed">
       <a href="https://www.instagram.com/draisabellagferreira/" target="_blank" rel="noopener noreferrer" class="flex justify-center items-center gap-2 hover:opacity-75 transition-all duration-300 ">
-        <img src="./img/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-4 filter drop-shadow-[0px_2px_20px_#89371C]">
+        <img src="./assets/icons/instagram-icon.svg" alt="Ícone do instagram" class="h-4 filter drop-shadow-[0px_2px_20px_#89371C]">
         <p class="leading-[normal] text-deepRed">Dra. Isabella Ferreira © Copyright 2024.</p>
       </a>
 
