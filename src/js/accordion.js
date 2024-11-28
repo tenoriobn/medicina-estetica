@@ -5,7 +5,6 @@ document.querySelectorAll('[data-accordion-button]').forEach(button => {
     const content = button.nextElementSibling;
     const icon = button.querySelector('[data-accordion-icon]');
 
-    // Fechar todos os outros accordions
     allContents.forEach(item => {
       if (item !== content) {
         item.classList.add('hidden');
@@ -19,11 +18,9 @@ document.querySelectorAll('[data-accordion-button]').forEach(button => {
       }
     });
 
-    // Alternar o estado do accordion clicado
     content.classList.toggle('hidden');
     content.classList.toggle('block');
 
-    // Rotacionar o ícone do botão clicado
     icon.classList.toggle('rotate-90');
   });
 });
@@ -31,7 +28,7 @@ document.querySelectorAll('[data-accordion-button]').forEach(button => {
 document.getElementById("show-more").addEventListener("click", function () {
   const hiddenFaqs = document.getElementById("hidden-faqs");
   const isHidden = hiddenFaqs.classList.contains("hidden");
-  const icon = this.querySelector("svg"); // Seleciona o ícone dentro do botão
+  const icon = this.querySelector("svg");
   
   if (isHidden) {
     hiddenFaqs.classList.remove("hidden");

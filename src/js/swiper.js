@@ -27,7 +27,7 @@ const updateButtonStyles = (swiper) => {
 
 const swiper = new Swiper('.mySwiper', {
   modules: [Navigation, Pagination],
-  spaceBetween: 16, // Espaçamento padrão
+  spaceBetween: 16,
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
@@ -37,7 +37,6 @@ const swiper = new Swiper('.mySwiper', {
     clickable: true,
   },
   breakpoints: {
-    // Configuração para dispositivos móveis
     0: {
       slidesPerView: 1,
       spaceBetween: 8,
